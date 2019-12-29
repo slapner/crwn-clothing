@@ -7,11 +7,10 @@ import "./collection-preview.styles.scss";
 
 const CollectionPreivew = ({ title, items, match, history }) => (
   <div className="collection-preview">
-    <h1
-      className="title"
-      onClick={() => history.push(`${match.url}/${title.toLowerCase()}`)}
-    >
-      {title.toUpperCase()}
+    <h1 className="title">
+      <span onClick={() => history.push(`${match.url}/${title.toLowerCase()}`)}>
+        {title.toUpperCase()}
+      </span>
     </h1>
     <div className="preview">
       {items
