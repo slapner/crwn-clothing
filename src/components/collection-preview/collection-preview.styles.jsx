@@ -1,0 +1,25 @@
+import styled from "styled-components";
+
+export const CollectionPreviewContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+`;
+
+export const CollectionPreviewTitle = styled.h1`
+  font-size: 28px;
+  margin-bottom: 25px;
+
+  span {
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+`;
+
+export const PreviewContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
